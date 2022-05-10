@@ -29,7 +29,7 @@ public class Main {
         });
 
         cats.stream()
-                .filter(value -> value.getUpvotes() > 0)
+                .filter(value -> value.getUpvotes() != null && value.getUpvotes() > 0)
                 .forEach(System.out::println);
     }
 }
